@@ -4,7 +4,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.vr.enable=false \
     persist.audio.handset.mic=digital \
     persist.audio.speaker.location=high \
+    qcom.hw.aac.encoder=true \
     ro.qc.sdk.audio.fluencetype=fluence \
+
+# Camera
+PRODUCT_PROPERTY_OVERRIDES += \
+    camera2.portability.force_api=1
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -13,6 +18,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.mdpcomp.logs=0 \
     debug.sf.hw=1 \
     persist.hwc.mdpcomp.enable=true
+
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.media.use-awesome=true
 
 # Thermal
 PRODUCT_PROPERTY_OVERRIDES += \
